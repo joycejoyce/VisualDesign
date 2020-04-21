@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Ultra|Work+Sans:400,500" rel="stylesheet">
+        <style>
+            body {
+                width: 80%;
+                margin: 0 auto;
+            }
+            #week {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 5vw;
+                margin-bottom: 5vw;
+            }
+            .item {
+                position: relative;
+                padding-top: 100%;
+            }
+            .day {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                width: 100%;
+            }
+            .diet,.notes {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-30%);
+                padding: 2%;;
+            }
+            body {
+                background-color: #DF0054;
+            }
+            h1 {
+                font-family: 'Ultra', serif;
+                font-weight: 400;
+                font-size: 4vw;
+                color: white;
+            }
+            .diet {
+                font-family: 'Work Sans', sans-serif;
+                color: black;
+                letter-spacing: 3px;
+                font-size: 1.5vw;
+            }
+            .item {
+                background-color: #FFD900;
+            }
+            .day {
+                font-family: 'Work Sans', sans-serif;
+                background-color: white;
+                color: #DF0054;
+            }
+            .notes-item {
+                font-family: 'Ultra', serif;
+                background-color: white;
+                color: #DF0054;
+                font-size: 1.9vw;
+            }
+            .fasting {
+                text-decoration: underline;
+                text-decoration-color: #FFD900;
+            }
+            @media only screen and (max-width: 860px) {
+                #week {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                h1 {
+                    font-size: 5vw;
+                }
+                .day {
+                    font-size: 2vw;
+                }
+                .diet {
+                    font-size: 2.1vw;
+                }
+                .notes {
+                    font-size: 2.5vw;
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                #week {
+                    grid-template-columns: 1fr 1fr;
+                }
+                h1 {
+                    font-size: 5vw;
+                }
+                .day {
+                    font-size: 3vw;
+                }
+                .diet {
+                    font-size: 3vw;
+                }
+                .notes {
+                    font-size: 4vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1><span class="fasting">Fasting</span> Weekly Planner</h1>
+        
+        <div id="week">
+            <div class="item">
+                <div class="item-content">
+                    <div class="day">Monday</div>
+                    <div class="diet">24hr fasting</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <div class="day">Tuesday</div>
+                    <div class="diet">
+                        Keto<br>
+                        15-18hr fasting
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <div class="day">Wednesday</div>
+                    <div class="diet">
+                        Keto<br>
+                        15-18hr fasting
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-content">
+                    <div class="day">Thursday</div>
+                    <div class="diet">
+                        Keto<br>
+                        15-18hr fasting
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="day">Friday</div>
+                <div class="diet">
+                    Keto<br>
+                    15-18hr fasting
+                </div>
+            </div>
+            <div class="item">
+                <div class="day">Saturday</div>
+                <div class="diet">
+                    Keto<br>
+                    or<br>
+                    Low carbohidrate
+                </div>
+            </div>
+            <div class="item">
+                <div class="day">Sunday</div>
+                <div class="diet">
+                    Keto<br>
+                    15-18hr fasting
+                </div>
+            </div>
+            <div class="item notes-item">
+                <div class="notes">5-1-1 Diet</div>
+            </div>
+        </div>
+    </body>
+</html>
